@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Blocks</h2>
+    <table style="width:100%">
+        <tr>
+            <th>Height</th>
+            <th>Hash</th>
+            <th>Timestamp</th>
+            <th>Miner's Address</th>
+            <th>Transactions</th>
+        </tr>
+    {% for block in object_list %}
+        <tr>
+            <td><a href="{% url "block_detail" block.height %}">{{ block.height }}</a></td>
+            <td>{{ block.hash }}</td>
+            <td>{{ block.timestamp }}</td>
+            <td>{{ block.address }}</td>
+            <td>{{ block.transactions }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Block's details</h2>
+    <ul>
+        <li>Height: {{ object.height }}</li>
+        <li>Hash: {{ object.hash }}</li>
+        <li>Timestamp: {{ object.timestamp }}</li>
+        <li>Miner's address: {{ object.address }}</li>
+        <li>Number of transactions: {{ object.transactions }}</li>
+    </ul>
+{% endblock %}
