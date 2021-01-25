@@ -14,7 +14,7 @@ def update_blocks():
     if first_block:
         last_timestamp = first_block.timestamp
     else:
-        last_timestamp = datetime.fromtimestamp(1606780800).\
+        last_timestamp = datetime.fromtimestamp(1611187200).\
             replace(tzinfo=msc)
 
     while (current_date - start_date).days >= 0:
