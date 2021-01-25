@@ -7,7 +7,7 @@ import time
 
 
 def update_blocks():
-    start_date = datetime.strptime('2020-12-21', "%Y-%m-%d")
+    start_date = datetime.strptime('2021-1-21', "%Y-%m-%d")
     current_date = datetime.today()
     first_block = Block.objects.all().first()
     msc = pytz.timezone('Etc/GMT-3')
